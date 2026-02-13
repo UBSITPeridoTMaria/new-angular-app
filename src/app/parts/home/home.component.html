@@ -1,35 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ADDDEV1 | Perido, Maria Cristina </title>
-</head>
-<body>
-<div>
-
-</div>
 <div class="container">
-    <h1>Application Development (ADDDEV1)</h1>
-    
-    <div class="info-grid">
-        <div class="info-item"><b>Student Name</b> Perido, Maria Cristina T.</div>
-        <div class="info-item"><b>Instructor</b> Erna-kristi Martinez</div>
-        <div class="info-item"><b>Course Units</b> 3 Units</div>
-        <div class="info-item"><b>Course Code</b> ADDDEV1</div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="jumbotron bg-light p-5 rounded">
+          <h1 class="display-4">{{ appTitle }}</h1>
+          <p class="lead"> Angular fundamentals</p>
+          <hr class="my-4">
+          
+          <div class="card mt-4">
+            <div class="card-body">
+              <h3 class="card-title">Application Information</h3>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <strong>Version:</strong> {{ version }}
+                </li>
+                <li class="list-group-item">
+                  <strong>Status:</strong> 
+                  <span class="badge bg-success" *ngIf="isActive">Active</span>
+                  <span class="badge bg-danger" *ngIf="!isActive">Inactive</span>
+                </li>
+                <li class="list-group-item">
+                  <strong>Current Year:</strong> {{ currentYear }}
+                </li>
+                <li class="list-group-item">
+                  <strong>Developer:</strong> {{ studentName }}
+                </li>
+                <li class="list-group-item">
+                  <strong>Course:</strong> {{ course }}
+                </li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="mt-4">
+            </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="course-desc">
-        <h3>About the Subject</h3>
-        <p>
-            Welcome to my ADDDEV1 portal! This course focuses on <strong> Application Development and Emerging Technologies</strong>. 
-            We will dive into the software development , initial ideation and planning to interface design, testing, and deployment. 
-            Our goal is to build digital innovations to solve real-world problems.
-        </p>
-    </div>
-
-    <footer>
-        &copy; 2026 | Built for ADDDEV1
-    </footer>
-</div>
+  </div>
 
